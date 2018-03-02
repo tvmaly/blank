@@ -19,6 +19,10 @@ https://gohugo.io/themes/creating/
 
 https://gohugo.io/themes/customizing/
 
+## Merging two themes
+
+https://discourse.gohugo.io/t/how-to-combine-two-hugo-themes/3244/2
+
 
 
 ## SCSS support
@@ -26,6 +30,10 @@ https://gohugo.io/themes/customizing/
 Bootstrap 4 files from the them have scss in them investigate this article on using Gulp
 
 http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/
+
+Static asset pipeline in Go
+
+https://blog.carlmjohnson.net/post/2017/hugo-asset-pipeline/
 
 ## License
 
