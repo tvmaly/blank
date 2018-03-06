@@ -4,8 +4,14 @@ This theme will incorporate the bootstrap 4 theme for email list signup CTA from
 
 [startbootstrap-landing-page](https://blackrockdigital.github.io/startbootstrap-landing-page/)
 
+# Features
+* embedded email list form is configurable in config.toml by setting variable .Site.Params.emailform.html
 
 # TODO
+* test task watcher while modifying css
+* make a css minifier with minify program
+* build go-asset-pipeline-utilities
+* write a good taskfile to do all parts
 
 ## Getting Started with a Blank theme
 
@@ -34,6 +40,22 @@ http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-j
 Static asset pipeline in Go
 
 https://blog.carlmjohnson.net/post/2017/hugo-asset-pipeline/
+
+### task project in go can replace make and provide watch function for pipeline
+
+https://github.com/go-task/task
+
+https://gist.github.com/carlmjohnson/e3716a0a89fab0484d0552a750c8cfb7
+
+https://github.com/postcss/autoprefixer
+
+https://github.com/carlmjohnson/monterey-jack
+
+https://github.com/tdewolff/minify
+
+https://github.com/carlmjohnson/scattered
+
+
 
 ## License
 

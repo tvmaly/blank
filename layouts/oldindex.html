@@ -1,10 +1,5 @@
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
-{{ partial "hero.html" . }}
-{{ partial "iconsgrid.html" . }}
-{{ partial "imageshowcases.html" . }}
-{{ partial "testimonials.html" . }}
-{{ partial "calltoaction.html" . }}
 	<main>
 		{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
 		{{ range $paginator.Pages }}
@@ -12,4 +7,5 @@
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
+{{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}

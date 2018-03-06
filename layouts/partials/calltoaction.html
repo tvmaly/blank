@@ -7,6 +7,9 @@
             <h2 class="mb-4">Ready to get started? Sign up now!</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+{{ if isset .Site.Params.emailform "html" }}
+    {{ .Site.Params.emailform.html | safeHTML }}
+{{ else }}
             <form>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
@@ -17,6 +20,7 @@
                 </div>
               </div>
             </form>
+{{ end }}
           </div>
         </div>
       </div>
