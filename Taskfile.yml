@@ -1,0 +1,18 @@
+version: '2'
+
+tasks:
+  scss:
+    cmds:
+    - compile_scss static/scss/landing-page.scss > static/css/landing-page.css
+    generates:
+    - static/css/*.css
+    sources:
+    - src/scss/*.scss
+
+  minify:
+    cmds:
+    - minify < static/css/landing-page.css > static/css/landing-page.min.css
+    generates:
+    - static/css/landing-page.min.css
+    sources:
+    - src/scss/landing-page.css
