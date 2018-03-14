@@ -4,10 +4,15 @@ This theme will incorporate the bootstrap 4 theme for email list signup CTA from
 
 [startbootstrap-landing-page](https://blackrockdigital.github.io/startbootstrap-landing-page/)
 
+And from a startbootstrap clean theme
+
+[startbootstrap-clean-blog](https://github.com/blackrockdigital/startbootstrap-clean-blog/)
+
 # Features
 * embedded email list form is configurable in config.toml by setting variable .Site.Params.emailform.html
 
 # TODO
+* referene /Users/tmaly/github/hugo-theme-bootstrap4-blog/ for single post ideas
 * test task watcher while modifying css
 * make a css minifier with minify program
 * build go-asset-pipeline-utilities

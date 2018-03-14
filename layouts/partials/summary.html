@@ -1,13 +1,28 @@
-	<article>
-		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
-		{{ range .Params.tags }}
-		<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-		{{ end }}
-		<div>
-			{{ .Summary }}
+<div class="card post-preview mb-4">
+	<div class="card-body p-0">
+		<div class="row no-gutters">
+			<div class="col-3 d-none d-md-flex my-auto post-preview-img">
+				<img class="rounded-circle img-fluid d-block mx-auto" src="/images/rounded-circle.jpg">
+			</div>
+		<div class="col-12 col-md-9 post-preview-text">
+			<div class="clearfix mb-3">
+				<ul class="list-inline float-md-left mb-md-0">
+					<li class="list-inline-item text-uppercase text-primary">
+					{{ range .Params.tags }}
+					<small><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></small>
+					{{ end }}
+					</li>
+				</ul>
+				<div class="float-md-right small text-muted"><time>{{ .Date.Format "02.01.2006 15:04" }}</time></div>
+			</div>
+			<h3 class="card-title mb-3">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</h3>
+			<p class="mb-4">{{ .Summary }}</p>
 			{{ if .Truncated }}
-				<a href="{{ .Permalink }}">Read more...</a>
+			<a href="{{ .Permalink }}" class="btn btn-primary">Read Post →</a>
 			{{ end }}
 		</div>
-	</article>
+		</div>
+	</div>
+</div>
